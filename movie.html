@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Movie</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body class="Container">
+      <div class="card CardSize">
+         <div class="card-content">
+            <div class="media">
+               <div class="media-content">
+                  <p class="title is-4" id="tiTle">Most Popular Movies</p>
+               </div>
+            </div>
+            <div class="content" id="subTitle">
+               Now Playing
+            </div>
+         </div>
+      </div>
+      <section class="columns is-multiline Container" id="movieNow">
+<!--
+            <figure class="image is-480x640" id="phoTo">
+               <img src="https://bulma.io/images/placeholders/480x640.png">
+            </figure>
+-->
+      </section>
+      <div class="modal" id="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content" id="modal-text">
+        </div>
+        <button class="modal-close is-large" id="close-btn" aria-label="close"></button>
+      </div>
+
+      <nav class="pagination is-rounded" role="navigation" aria-label="pagination">
+         <a id="prePage" class="pagination-previous">Previous</a>
+         <a id="postPage"class="pagination-next">Next page</a>
+         <ul class="pagination-list">
+           <li><a class="pagination-link" id="1" aria-label="Page 1" aria-current="page">1</a></li>
+<!--            <li><span class="pagination-ellipsis">&hellip;</span></li>-->
+            <li><a class="pagination-link" aria-label="Goto page 7" id="2">2</a></li>
+            <li><a class="pagination-link" aria-label="Goto page 8" id="3">3</a></li>
+            <li><a class="pagination-link" aria-label="Goto page 9" id="4">4</a></li>
+<!--            <li><span class="pagination-ellipsis">&hellip;</span></li>-->
+            <li><a class="pagination-link" aria-label="Goto page 20" id="5">5</a></li>
+         </ul>
+      </nav>
+      <footer id="fooTer">
+         <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div id="navbarBasicExample" class="navbar-menu">
+               <div class="navbar-start">
+                  <a href="https://mediastudies.humber.ca/programs/web-design-and-development.html" target="_blank" class="navbar-item">
+                  ABOUT US
+                  </a>
+                  <a href="https://www.cookiebot.com/en/privacy-policy-cookies" target="_blank" class="navbar-item">
+                  SUPPORT
+                  </a>
+                  <a href="https://developers.themoviedb.org" target="_blank" class="navbar-item">
+                  API
+                  </a>
+               </div>
+            </div>
+         </nav>
+      </footer>
+   </body>
+  <script src="js/movie.js"></script>
+</html>

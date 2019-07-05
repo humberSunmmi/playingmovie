@@ -1,0 +1,182 @@
+body {
+     font-family: 'Nunito', sans-serif;
+}
+ .logo{
+     margin-top: 1em;
+}
+ #tiTle{
+     font-family: 'Comfortaa', cursive;
+     font-size: 30px;
+}
+ #subTitle{
+     font-family: 'Righteous', cursive;
+     font-size: 50px;
+}
+ #movieNow{
+     background-color: #fff;
+     padding: 1em;
+     margin: 1em ;
+     overflow: hidden;
+}
+ .ButtonSize{
+     margin-top: 1em;
+}
+ .Container{
+     margin-left: 1em;
+     margin-right: 1em;
+}
+ .CardSize{
+     background-color: rgba(236, 235, 232, 0.212);
+     padding-top: 2em;
+     padding-left: 4em;
+     padding-right: 4em;
+     padding-bottom: 1em;
+}
+ .fontSize{
+     padding-left: 13px;
+     padding-top: 0;
+     font-weight: 600;
+}
+ .Center li{
+     margin-top: 1em;
+}
+ .BottomText{
+     margin-top: 0.8em;
+     margin-right: 1.7em;
+}
+ #fooTer{
+     font-size: 14px;
+}
+ .movie-wrap{
+     padding: 5px 5px 0 0;
+}
+ .movie-inner{
+     box-shadow: 0 0 0.5em rgba(0,0,0,1);
+     padding: 15px;
+     margin: 15px;
+}
+ .movie-inner .column{
+     position: relative;
+}
+ .movie-inner .title {
+     font-size: 25px;
+}
+ .movie-inner .description {
+     font-size: 15px;
+     margin-top: 5px;
+}
+ .movie-inner .release-date {
+     margin-top: 15px;
+     color: white;
+     background: #808080a6;
+     padding: 5px;
+     border-radius: 8px;
+}
+ .movie-inner .rating {
+     position: absolute;
+     bottom: 15px;
+     right: 15px;
+     background-color: yellow;
+     padding: 5px;
+     color: #555252;
+     border-radius: 8px;
+}
+ .movie-inner #more-info{
+     position: absolute;
+     bottom: 15px;
+     background-color: #1481ad;
+     color: white;
+     padding: 5px;
+     display: block;
+     cursor: pointer;
+     border-radius: 8px;
+}
+ .modal-background {
+     background-color: rgba(10,10,10,.86);
+}
+ .modal-content {
+     background-color: #eff1f7;
+     padding: 20px;
+     border-radius: 20px;
+     width: 80%;
+}
+ #modal .score {
+     font-size: 25px;
+     font-weight: bolder;
+     background-color: #444141;
+     color: #fff8f8;
+     padding: 15px 15px;
+     border-radius: 53px;
+     border: solid 15px #607a88;
+     margin: 10px 0;
+     position: absolute;
+     right: -70px;
+     top: 0;
+}
+ #modal .movie-inner .description {
+     width: 90%;
+}
+ #modal .genres-list {
+     position: absolute;
+     bottom: 15px;
+     color: white;
+     background-color: #4265ce;
+     padding: 5px 10px;
+}
+ #modal .trailer {
+     margin-top: 20px;
+     display: block;
+}
+ #modal .fa-play {
+     font-size: 35px;
+     margin: 0 30px;
+     color: white;
+     background-color: red;
+     padding: 26px 25px 25px 30px;
+     border-radius: 50px;
+}
+
+
+
+
+
+/*** RESPONSIVE MEDIA QUERIES ***/
+
+@media screen and (max-width: 300px) {
+     #modal .fa-play {
+         margin: 10px 20px 100px;
+    }
+     #modal .score {
+         margin: 1px 75px;
+    }
+}
+
+ @media screen and (max-width: 1080px) {
+     .movie-inner .release-date {
+         font-size: 70%;
+         text-align: center;
+         display: inline-grid;
+         grid-template-columns: 1fr;
+         margin: 7px 5px 50px;
+    }
+     #modal .score {
+         font-size: 90%;
+         padding: auto;
+         margin: 10px 30px;
+    }
+   #modal .fa-play {
+         margin: 10px 10px 70px;
+    }
+}
+ @media screen and (max-width: 768px) {
+     #modal .score {
+         margin: 1px 75px;
+         padding: 5px;
+    }
+     #modal .fa-play {
+         font-size: 20px;
+         margin: 10px 10px 70px;
+    }
+}
+
+
